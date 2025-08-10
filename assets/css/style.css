@@ -75,6 +75,11 @@ body,html {
 .bgmBtn.is_on {
     background: #3A4958;
 }
+@media screen and (max-width: 1024px) { 
+    .bgmBtn:hover {
+        opacity: 1;
+    }
+}
 
 .sec {
     background: #FFF;
@@ -153,6 +158,7 @@ body,html {
     -ms-filter: blur(20px);
     filter: blur(20px);
     transition: all 0.5s ease;
+    transform: translateZ(0);
 }
 .sec .secTextBig strong.animeEnd {
     -ms-filter: blur(0px);
@@ -640,6 +646,11 @@ aside nav ul li a {
 }
 #chara .line.right + img {
     right: 8px;
+}
+@media screen and (max-width: 1024px) { 
+    #chara .charaVoiceItem:hover {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 767px) {
     #chara {
