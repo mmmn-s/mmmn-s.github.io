@@ -13,6 +13,7 @@ body,html {
         font-size: 12px;
     }
 }
+
 .c-yellow {
     color: #FFC300;
 }
@@ -41,6 +42,7 @@ body,html {
 .loading h1 {
     width: fit-content;
 }
+
 .bgmBtn {
     background: #ffffff;
     color: #C69C6D;
@@ -158,6 +160,7 @@ body,html {
 section {
     width: 100%;
 }
+
 .header {
     position: absolute;
     top: 0;
@@ -168,7 +171,6 @@ section {
     max-width: 489px;
     width: 25%;
 }
-
 .header.is_fixed {
     position: fixed;
     top: 40px;
@@ -178,6 +180,7 @@ section {
 .header img {
     display: block;
 }
+
 aside {
     color: #FFF;
     position: fixed;
@@ -227,7 +230,6 @@ aside nav ul li a {
     object-position: center 0;
     position: absolute;
 }
-
 @media screen and (max-width: 1024px) { 
     .kv {
         padding-top: 70%;
@@ -256,7 +258,6 @@ aside nav ul li a {
     z-index: 1;
     position: static;
 }
-
 #intro .bgFrame {
     position: absolute;
     background: #000000;
@@ -292,7 +293,6 @@ aside nav ul li a {
     top: -13%;
     left: 55%;
 }
-
 @media screen and (max-width: 1024px) {
     #intro {
         height: 950px;
@@ -416,7 +416,6 @@ aside nav ul li a {
     filter: blur(0px);
     border-radius: 100px;
 }
-
 #chara .charaTabContent {
     margin-top: 50px;
 }
@@ -615,7 +614,6 @@ aside nav ul li a {
 #chara .line.right + img {
     right: 8px;
 }
-
 @media screen and (max-width: 767px) {
     #chara {
         padding-bottom: 120px;
@@ -697,6 +695,7 @@ aside nav ul li a {
     position: absolute;
     display: block;
 }
+
 #info {
     position: relative;
     overflow: hidden;
@@ -759,6 +758,7 @@ aside nav ul li a {
         padding-left: 0;
     }
 }
+
 #footer {
     padding: 70px 8% 50px;
     background: #FFF;
@@ -767,6 +767,7 @@ aside nav ul li a {
     text-align: center;
     width: 100%;
 }
+
 /* アニメーション */
 .loading {
     bottom: 0;
