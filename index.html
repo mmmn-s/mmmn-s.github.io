@@ -3,17 +3,16 @@
 <html lang="ja">
 <head>
 
+<title>Re：focus ～光の記憶をほどく時～ | mmmn`s</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="format-detection" content="email=no,telephone=no,address=no">
-
 <meta name="description" content="Re：focusの公式サイトです。">
 
-
 <!-- OGP -->
-<meta property="og:title" content="Re：focus">
+<meta property="og:title" content="Re：focus ～光の記憶をほどく時～ | mmmn`s">
 <meta property="og:type" content="website">
 <meta property="og:description" content="Re：focusの公式サイトです。">
 <meta property="og:site_name" content="Re：focus">
@@ -23,18 +22,50 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- favicon -->
-<link rel="shortcut icon" href="assets/css/fovicon.ico" />
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
 <meta name="theme-color" content="#fff">
 
-<!-- CSSです -->
+<!-- CSS -->
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
+
 <body>
-    <header></header>
+
+    <!-- 音楽ファイル -->
+    <audio id="bgm" src="assets/sound/bgm.mp3" loop></audio>
+
+    <!-- ボタン -->
+    <p class="bgmBtn">
+        <img src="assets/images/icon_volume_off.svg" alt="BGM再生" width="16" height="16">
+        <span>BGM OFF</span>
+    </p>
+
+    <div class="loading">
+        <h1><img src="assets/images/logo.svg" alt="Re：focus" width="289" height="76"></h1>
+    </div>
+
+    <header class="header">
+        <h1><img src="assets/images/logo.svg" alt="Re：focus" width="489" height="128"></h1>
+    </header>
+    <aside>
+        <nav>
+            <p class=""></p>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#chara">Character</a></li>
+                <li><a href="#movie" class="is_disabled">Movie</a></li>
+                <li><a href="#info">Information</a></li>
+            </ul>
+        </nav>
+    </aside>
     <main>
-        <div class="kv sec">
+        <div class="kv">
+            <picture>
+                <source srcset="assets/images/kv.webp" media="(max-width: 767px)">
+                <img src="assets/images/kv.webp" srcset="assets/images/kv@2.webp 2x" alt="Re：focus ～光の記憶をほどく時～">
+            </picture>
         </div>
         <section id="intro" class="intro sec">
             <div class="secInner">
@@ -43,21 +74,239 @@
                     <span>あらすじ</span>
                 </h2>
                 <div class="secText">
-                    <p class="secTextBig"><strong class="c-yellow">光</strong>の<strong class="c-blue">記憶</strong>を<strong>ほどく時</strong>、<br>未来が決まる。</p>
-                    <p>ダミーテキストダミーテキスト<br>ダミーテキストダミーテキストダミーテキストダミーテキスト<br>ダミーテキストダミーテキストダミーテキスト</p>
+                    <p class="secTextBig"><strong class="animeBlur">光</strong>の<strong class="animeBlur">記憶</strong>を<strong class="animeBlur">ほどく時</strong>、<br>未来が決まる。</p>
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキスト<br>ダミーテキストダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
                 </div>
+                <p class="bgFrame bgFrame01"><img src="assets/images/bg_frame_01.png" alt="" loading="lazy"></p>
+                <p class="bgFrame bgFrame02"><img src="assets/images/bg_frame_02.png" alt="" loading="lazy"></p>
+                <p class="bgFrame bgFrame03"><img src="assets/images/bg_frame_03.png" alt="" loading="lazy"></p>
+                <p class="bgFrame bgFrame04"><img src="assets/images/bg_frame_04.png" alt="" loading="lazy"></p>
+                <p class="bgFrame bgFrame05"><img src="assets/images/bg_frame_05.png" alt="" loading="lazy"></p>
             </div>
+            <div class="bgSakura"></div>
         </section>
         <section id="chara" class="chara sec">
+            <div class="secInner">
+                <h2 class="secTitle c-white">
+                    <strong>Character</strong>
+                    <span>キャラクタ―紹介</span>
+                </h2>
+                <div class="charaTab">
+                    <div class="charaTabBtn">
+                        <p class="charaTabBtnItem is_inori is_active"><img src="assets/images/icon_inori.jpg" alt="綾瀬 祈梨（あやせ いのり）"></p>
+                        <p class="charaTabBtnItem is_yua"><img src="assets/images/icon_yua.jpg" alt="相坂 唯愛（あいさか ゆあ）"></p>
+                        <p class="charaTabBtnItem is_yukari"><img src="assets/images/icon_yukari.jpg" alt="藤 ゆかり （ふじ ゆかり）"></p>
+                    </div>
+                    <div class="charaTabContent c-white">
+                        <div class="charaTabContentItem is_inori is_active">
+                            <div class="charaLeft">
+                                <p class="charaPhoto"><img src="assets/images/chara_inori.webp" alt="綾瀬 祈梨（あやせ いのり）" width="400" height="500"></p>
+                                <div class="charaSerif">
+                                    <p class="charaSerifItem">「あの時以上の写真を撮れば良いんだ！」</p>
+                                    <p class="charaSerifItem">「これが学食とは……豪華すぎる……」</p>
+                                </div>
+                            </div>
+                           <div class="charaRight">
+                                <div class="charaName">
+                                    <small>あやせ いのり</small>
+                                    <strong>綾瀬 祈梨 <span>cv.mernor</span></strong>
+                                    <div class="charaVoice">
+                                        <p class="charaVoiceItem" data-audio="chara_inori_01.mp3">Voice<img src="assets/images/icon_volume_on.svg" alt="Voice" width="25" height="20"></p>
+                                        <p class="charaVoiceItem" data-audio="chara_inori_02.mp3">Voice<img src="assets/images/icon_volume_on.svg" alt="Voice" width="25" height="20"></p>
+                                    </div>
+                                </div>
+                                <ul class="charaProfile">
+                                    <li>誕生日：7/30（高校1年生）</li>
+                                    <li>身長：164cm</li>
+                                    <li>体重：52kg</li>
+                                    <li>BWH：77/64/82</li>
+                                    <li>好きな食べ物：ハンバーグ</li>  
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="charaTabContentItem is_yua">
+                            <div class="charaLeft">
+                                <p class="charaPhoto"><img src="assets/images/chara_yua.webp" alt="相坂 唯愛（あいさか ゆあ）" width="400" height="500"></p>
+                                <div class="charaSerif">
+                                    <p class="charaSerifItem">「わさお、さっきは撮らせてくれてありがとうね。よしよし」</p>
+                                    <p class="charaSerifItem">「ふふふ、いのりは変わらないね」</p>
+                                </div>
+                            </div>
+                           <div class="charaRight">
+                                <div class="charaName">
+                                    <small>あいさか ゆあ</small>
+                                    <strong>相坂 唯愛<span>cv.mernor</span></strong>
+                                    <div class="charaVoice">
+                                        <p class="charaVoiceItem" data-audio="chara_yua_01.mp3">Voice<img src="assets/images/icon_volume_on.svg" alt="Voice" width="25" height="20"></p>
+                                        <p class="charaVoiceItem" data-audio="chara_yua_02.mp3">Voice<img src="assets/images/icon_volume_on.svg" alt="Voice" width="25" height="20"></p>
+                                    </div>
+                                </div>
+                                <ul class="charaProfile">
+                                    <li>誕生日：11/8（高校1年生）</li>
+                                    <li>身長：157cm</li>
+                                    <li>体重：49.8kg</li>
+                                    <li>BWH：89/60/86</li>
+                                    <li>好きな食べ物：甘いもの全部</li>  
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="charaTabContentItem is_yukari">
+                            <div class="charaLeft">
+                                <p class="charaPhoto"><img src="assets/images/chara_yukari.webp" alt="藤 ゆかり（ふじ ゆかり）" width="400" height="500"></p>
+                                <div class="charaSerif">
+                                    <p class="charaSerifItem">「この写真同好会は対立関係にある。だから、帰って」</p>
+                                    <p class="charaSerifItem">「長い。聞いてないから。邪魔しないでくれる？」</p>
+                                </div>
+                            </div>
+                           <div class="charaRight">
+                                <div class="charaName">
+                                    <small>ふじ ゆかり</small>
+                                    <strong>藤 ゆかり<span>cv.もん</span></strong>
+                                    <div class="charaVoice">
+                                        <p class="charaVoiceItem" data-audio="chara_yukari_01.mp3">Voice<img src="assets/images/icon_volume_on.svg" alt="Voice" width="25" height="20"></p>
+                                        <p class="charaVoiceItem"data-audio="chara_yukari_02.mp3">Voice<img src="assets/images/icon_volume_on.svg"  alt="Voice" width="25" height="20"></p>
+                                    </div>
+                                </div>
+                                <ul class="charaProfile">
+                                    <li>誕生日：2/14（高校1年生）</li>
+                                    <li>身長：154cm</li>
+                                    <li>体重：40kg</li>
+                                    <li>BWH：80/54/82</li>
+                                    <li>好きな食べ物：羊羹（こしあん）</li>  
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="line top"></span>
+            <span class="line bottom"></span>
+            <span class="line left"></span>
+            <img src="assets/images/chara_light.svg" alt="">
+            <span class="line right"></span>
+            <img src="assets/images/chara_light.svg" alt="">
         </section>
         <section id="movie" class="movie sec">
+            <div class="secInner">
+                <h2 class="secTitle">
+                    <strong>Movie</strong>
+                    <span>オープニングムービー</span>
+                </h2>
+                <div class="movieItem"></div>
+            </div>
+        </section>
+        <section id="info" class="info sec c-white">
+            <div class="secInner">
+                <h2 class="secTitle">
+                    <strong>Information</strong>
+                    <span>製品情報</span>
+                </h2>
+                <dl class="infoList">
+                    <div class="infoListItem">
+                        <dt>タイトル</dt>
+                        <dd>Re：focus ～光の記憶をほどく時～</dd>
+                    </div>
+                    <div class="infoListItem">
+                        <dt>対応言語（音声）</dt>
+                        <dd>日本語</dd>
+                    </div>
+                    <div class="infoListItem">
+                        <dt>発売予定時期</dt>
+                        <dd>2026年 夏頃</dd>
+                    </div>
+                    <div class="infoListItem">
+                        <dt>販売予定サイト</dt>
+                        <dd>DLsite / BOOTH など</dd>
+                    </div>
+                    <div class="infoListItem">
+                        <dt>対応環境</dt>
+                        <dd>PC（Windows 11）</dd>
+                    </div>
+                    <div class="infoListItem">
+                        <dt>Staff</dt>
+                        <dd>[サークル名] mmmn's<br>[原画・背景] ほしこはく <a href="" target="_blank">@xxxx</a><br>[SD原画] mernor<br>[シナリオ] 黒江思案<br>[音楽・BGMプロデュース] 藤田 雅奈<br>[オープニングテーマ XXXXX] 歌：mernor ／ 作詞・作曲・編曲・動画：藤田 雅奈<br>[企画・プロデュース] もん</dd>
+                    </div>
+                </dl>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer">©mmmn's All Rights Reserved.</footer>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/common.js"></script>
+    <script>
+        $(function() {
+            var $mainVisual = $('.kv');
+            var $header = $('header');
+            function checkScroll() {
+                var mvHeight = $mainVisual.outerHeight();
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > mvHeight) {
+                    $header.addClass('is_fixed');
+                } else {
+                    $header.removeClass('is_fixed');
+                }
+            }
+            $(window).on('scroll resize', checkScroll);
+            checkScroll();
+        });
+
+    $('.bgmBtn').on('click', function(){
+        const $btn = $(this);
+        const bgm = $('#bgm').get(0); // jQueryからDOM要素を取得
+
+        if ($btn.hasClass('is_on')) {
+            // 再生中 → 停止
+            bgm.pause();
+            $btn.removeClass('is_on').html(`
+                <img src="assets/images/icon_volume_off.svg" alt="BGM再生" width="16" height="16">
+                <span>BGM OFF</span>
+            `);
+        } else {
+            // 停止中 → 再生
+            bgm.play();
+            $btn.addClass('is_on').html(`
+                <img src="assets/images/icon_volume_on.svg" alt="BGM再生" width="16" height="16">
+                <span>BGM ON</span>
+            `);
+        }
+    });
+
+    $(function() {
+        $('.charaTabBtnItem').on('click', function() {
+            var index = $(this).index();
+
+            // タブのactive切り替え
+            $('.charaTabBtnItem').removeClass('is_active');
+            $(this).addClass('is_active');
+
+            // コンテンツのactive切り替え
+            $('.charaTabContentItem').removeClass('is_active').hide();
+            $('.charaTabContentItem').eq(index).addClass('is_active').fadeIn(0);
+        });
+    });
+
+    $(function(){
+        $('.charaVoiceItem').on('click', function(){
+            var audioSrc = 'assets/sound/' + $(this).data('audio');
+            var audio = new Audio(audioSrc);
+            audio.play();
+        });
+    });
+
+    // ページ内スクロール
+    $('a[href^="#"] ').click(function () {
+    const speed = 100;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+    });
+
+    </script>
+    
 </body>
 </html>
