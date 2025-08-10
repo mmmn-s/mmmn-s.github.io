@@ -165,7 +165,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1000;
     top: 7%;
     left: 7%;
     max-width: 489px;
@@ -180,6 +180,18 @@ section {
 .header img {
     display: block;
 }
+@media screen and (max-width: 767px) { 
+    .header {
+        top: 3%;
+        left: 7%;
+        width: 40%;
+    }
+    .header.is_fixed {
+        top: 20px;
+        left: 30px;
+        max-width: 150px;
+    }
+}
 
 aside {
     color: #FFF;
@@ -190,6 +202,7 @@ aside {
     height: fit-content;
     z-index: 1000;
     font-size: 16px;
+    display: none !important;
 }
 aside nav {
     margin: 0px auto;
@@ -320,6 +333,9 @@ aside nav ul li a {
     }
     .sec .secTextBig strong {
         font-size: 24px;
+    }
+    #intro .bgFrame.bgFrame05 {
+        top: -4%;
     }
 }
 
@@ -669,6 +685,17 @@ aside nav ul li a {
     #chara .charaProfile {
         margin-top: 30px;
         padding-top: 23px;
+    }
+    #chara .line.left + img,
+    #chara .line.right + img {
+        width: 14px;
+        height: 135px;
+    }
+    #chara .line.left + img {
+        left: 14px;
+    }
+    #chara .line.right + img {
+        right: 14px;
     }
 }
 
