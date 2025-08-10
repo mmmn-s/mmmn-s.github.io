@@ -618,6 +618,15 @@ aside nav ul li a {
     #chara {
         padding-bottom: 120px;
     }
+    #chara:has(.is_inori.is_active)::after {
+        background-image: none;
+    }
+    #chara:has(.is_yua.is_active)::after {
+        background-image: none;
+    }
+    #chara:has(.is_yukari.is_active)::after {
+        background-image: none;
+    }
     #chara .charaTab {
         margin-top: 25px;
     }
@@ -640,7 +649,6 @@ aside nav ul li a {
     #chara .charaSerif {
         top: -30px;
     }
-
     #chara .charaVoice {
         gap: 10px;
         margin-top: 20px;
