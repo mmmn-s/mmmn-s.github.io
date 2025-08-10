@@ -189,7 +189,7 @@ aside nav ul li + li {
     position: relative;
 }
 .kv picture {
-    background: url(../images/kv_bg.webp)  center / cover;
+    background: url(../images/kv_bg.webp)  center 0 / cover;
     width: 110%;
     height: 110%;
     position: absolute;
@@ -201,7 +201,7 @@ aside nav ul li + li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 0;
     position: absolute;
 }
 
@@ -405,6 +405,7 @@ aside nav ul li + li {
     writing-mode: vertical-rl;
     line-height: 1;
     padding: 10px;
+    text-wrap-mode: nowrap;
 }
 #chara .charaSerifItem + .charaSerifItem {
     margin-top: 40px;
