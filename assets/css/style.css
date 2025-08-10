@@ -189,7 +189,7 @@ aside nav ul li + li {
     position: relative;
 }
 .kv picture {
-    background: url(../images/kv_bg.webp) center 0 / cover;
+    background: url(../images/kv_bg.webp)  center / cover;
     width: 110%;
     height: 110%;
     position: absolute;
@@ -201,7 +201,7 @@ aside nav ul li + li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 0;
+    object-position: center;
     position: absolute;
 }
 
@@ -267,6 +267,7 @@ aside nav ul li + li {
     background: #3A4958;
     position: relative;
     overflow: hidden;
+    padding-bottom: 240px;
 }
 #chara::before {
     background: url(../images/tex_noise.webp) 0 0 / cover no-repeat;
@@ -640,7 +641,7 @@ aside nav ul li + li {
     border-top: 1px solid #DDD;
     font-size: 10px;
     text-align: center;
-    width: calc(100% - 170px);
+    width: 100%;
 }
 /* アニメーション */
 .loading {
