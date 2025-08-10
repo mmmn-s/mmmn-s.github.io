@@ -189,7 +189,7 @@ aside nav ul li + li {
     position: relative;
 }
 .kv picture {
-    background: url(../images/kv_bg.webp)  center / cover;
+    background: url(../images/kv_bg.webp) center 0 / cover;
     width: 110%;
     height: 110%;
     position: absolute;
