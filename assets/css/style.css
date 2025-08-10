@@ -33,6 +33,7 @@ body,html {
     width: 100%;
     height: 100dvh;
     background: linear-gradient(180deg, #f0f4f5 0%, #cbd0d5 100%);
+    background: #292E3B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +42,7 @@ body,html {
 }
 .loading h1 {
     width: fit-content;
+    filter: brightness(10000%);
 }
 @media screen and (max-width: 767px) {
     .loading h1 {
