@@ -270,7 +270,7 @@ aside nav ul li + li {
 }
 #chara::before {
     background: url(../images/tex_noise.webp) 0 0 / cover no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     content: "";
     display: block;
     width: 100%;
@@ -283,7 +283,7 @@ aside nav ul li + li {
 }
 #chara:has(.is_active)::after {
     background: url(../images/chara_inori_bg.webp) 0 0 / cover no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     content: "";
     display: block;
     width: 100%;
