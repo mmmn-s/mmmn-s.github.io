@@ -250,7 +250,13 @@ aside nav ul li a {
 }
 @media screen and (max-width: 1024px) { 
     .kv {
-        padding-top: 70%;
+        padding-top: 153%;
+    }
+    .kv picture {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
     }
 }
 
@@ -834,16 +840,27 @@ aside nav ul li a {
         opacity: 1;
 	}
 }
+@media screen and (max-width: 1024px) { 
+    .header {
+        animation: 1.0s ease 2.0s forwards logoAnime;
+    }
+}
 
 .kv picture {
     animation: 1s ease 2.0s forwards kvBlurAnime;
-    filter: blur(6px);
+    filter: blur(5px);
 }
 @keyframes kvBlurAnime {
     0% {
         filter: blur(5px);
     }
     100% {
+        filter: blur(0px);
+    }
+}
+@media screen and (max-width: 1024px) { 
+    .kv picture {
+        animation: unset;
         filter: blur(0px);
     }
 }
@@ -859,6 +876,12 @@ aside nav ul li a {
 	100% {
         opacity: 1;
 	}
+}
+@media screen and (max-width: 1024px) { 
+    .kv picture img {
+        animation: unset;
+        opacity: 1;
+    }
 }
 
 #chara .charaTabContentItem.is_active {
