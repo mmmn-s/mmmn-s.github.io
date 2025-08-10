@@ -640,7 +640,7 @@ aside nav ul li + li {
     border-top: 1px solid #DDD;
     font-size: 10px;
     text-align: center;
-    width: calc(100% - 170px);
+    width: 100%;
 }
 /* アニメーション */
 .loading {
