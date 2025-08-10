@@ -5,7 +5,13 @@ body,html {
     letter-spacing: 0.1em;
     line-height: 2;
     font-feature-settings: "palt" 1;
+    font-size: 16px;
     background: linear-gradient(180deg, #f0f4f5 0%, #dbdfe2 100%);
+}
+@media screen and (max-width: 767px) {
+    body,html {
+        font-size: 12px;
+    }
 }
 .c-yellow {
     color: #FFC300;
@@ -63,7 +69,6 @@ body,html {
     background: #3A4958;
 }
 
-
 .sec {
     background: #FFF;
     padding: 120px 8%;
@@ -106,10 +111,29 @@ body,html {
 .sec .secTitle span::after {
     right: 0;
 }
+@media screen and (max-width: 767px) {
+    .sec .secTitle strong {
+        font-size: 30px;
+    }
+    .sec .secTitle span {
+        font-size: 10px;
+        padding: 0 10px 5px;
+        margin-top: 10px;
+    }
+    .sec .secTitle span::before,
+    .sec .secTitle span::after {
+        width: 6px;
+        height: 6px;
+    }
+}
+
 .sec .secText {
     text-align: center;
     margin-top: 40px;
     line-height: 2.25;
+    filter: drop-shadow(0 0 6px white) drop-shadow(0 0 6px white) drop-shadow(0 0 6px white);
+    position: sticky;
+    z-index: 1;
 }
 .sec .secTextBig {
     font-size: 28px;
@@ -180,8 +204,7 @@ aside nav ul li a {
 	width: 150px;
 	text-align: center;
 }
-aside nav ul li + li {
-}
+
 .kv {
     width: 100%;
     padding-top: 50%;
@@ -205,6 +228,12 @@ aside nav ul li + li {
     position: absolute;
 }
 
+@media screen and (max-width: 1024px) { 
+    .kv {
+        padding-top: 70%;
+    }
+}
+
 #intro {
     position: relative;
     overflow: hidden;
@@ -225,6 +254,7 @@ aside nav ul li + li {
 }
 #intro .secInner {
     z-index: 1;
+    position: static;
 }
 
 #intro .bgFrame {
@@ -253,7 +283,7 @@ aside nav ul li + li {
 #intro .bgFrame.bgFrame04 {
     max-width: 660px;
     width: 40%;
-    left: -10%;
+    left: -13%;
     top: 5%;
 }
 #intro .bgFrame.bgFrame05 {
@@ -261,6 +291,36 @@ aside nav ul li + li {
     width: 25%;
     top: -13%;
     left: 55%;
+}
+
+@media screen and (max-width: 1024px) {
+    #intro {
+        height: 950px;
+    }
+    #intro .bgFrame.bgFrame02 {
+        top: 71%;
+        left: -9%;
+    }
+    #intro .bgFrame.bgFrame03 {
+        right: -19%;
+        bottom: 35%;
+    }
+    #intro .bgFrame.bgFrame05 {
+        width: 32%;
+        top: -10%;
+        left: 62%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #intro {
+        height: 700px;
+    }
+    .sec .secTextBig {
+        font-size: 18px;
+    }
+    .sec .secTextBig strong {
+        font-size: 24px;
+    }
 }
 
 #chara {
@@ -367,14 +427,14 @@ aside nav ul li + li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 100px;
     width: 100%;
     margin: 0 auto;
 }
 #chara .charaLeft {
     position: relative;
     max-width: 400px;
-    width: calc(50% - 60px);
+    width: calc(50% - 50px);
 }
 #chara .charaPhoto {
     background: #000;
@@ -412,7 +472,7 @@ aside nav ul li + li {
 }
 #chara .charaRight {
     max-width: 340px;
-    width: calc(50% - 60px);
+    width: calc(50% - 50px);
 }
 #chara .charaName {
     width: 100%;
@@ -556,6 +616,56 @@ aside nav ul li + li {
     right: 8px;
 }
 
+@media screen and (max-width: 767px) {
+    #chara {
+        padding-bottom: 120px;
+    }
+    #chara .charaTab {
+        margin-top: 25px;
+    }
+    #chara .charaTabBtn {
+        gap: 10px;
+    }
+    #chara .charaTabBtnItem {
+        width: 60px;
+        height: 60px;
+    }
+    #chara .charaTabContentItem.is_active {
+        flex-direction: column;
+        gap: 50px;
+    }
+    #chara .charaLeft {
+        max-width: 240px;
+        width: 90%;
+        margin-right: 10%;
+    }
+    #chara .charaSerif {
+        top: -30px;
+    }
+
+    #chara .charaVoice {
+        gap: 10px;
+        margin-top: 20px;
+    }
+    #chara .charaVoiceItem {
+        min-width: 115px;
+    }
+    #chara .charaRight {
+       width: 100%; 
+       max-width: 240px;
+    }
+    #chara .charaName strong {
+        font-size: 24px;
+    }
+    #chara .charaName strong span {
+        font-size: 12px;
+    }
+    #chara .charaProfile {
+        margin-top: 30px;
+        padding-top: 23px;
+    }
+}
+
 #movie {
     background: linear-gradient(180deg, #f0f4f5 0%, #cbd0d5 100%);
 }
@@ -635,6 +745,19 @@ aside nav ul li + li {
 }
 #info .infoListItem dd a:hover {
     opacity: 0.7;
+}
+@media screen and (max-width: 767px) {
+    #info .infoListItem {
+        flex-direction: column;
+    }
+    #info .infoListItem dt {
+        width: 100%;
+        text-align: left;
+    }
+    #info .infoListItem dd {
+        width: 100%;
+        padding-left: 0;
+    }
 }
 #footer {
     padding: 70px 8% 50px;
