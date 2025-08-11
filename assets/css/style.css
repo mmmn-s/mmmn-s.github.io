@@ -475,7 +475,7 @@ aside nav ul li a {
     border-color: #b34c4c;
 }
 #chara .charaTabBtnItem.is_yua {
-    border-color: #e598b8;
+    border-color: #e585a2;
 }
 #chara .charaTabBtnItem.is_yukari {
     border-color: #7d77af;
@@ -646,7 +646,7 @@ aside nav ul li a {
 #chara .is_yua .charaSerifItem,
 #chara .is_yua .charaVoiceItem,
 #chara .is_yua .charaProfile li::before {
-    background: #d87a96;
+    background: #e585a2;
 }
 #chara .is_yukari .charaSerifItem,
 #chara .is_yukari .charaVoiceItem,
