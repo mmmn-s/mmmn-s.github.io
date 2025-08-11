@@ -534,6 +534,8 @@ aside nav ul li a {
     justify-content: center;
     gap: 20px;
     margin: 0 auto;
+    z-index: 1;
+    position: sticky;
 }
 #chara .charaTabBtnItem {
     cursor: pointer;
@@ -622,6 +624,13 @@ aside nav ul li a {
     line-height: 1;
     padding: 10px;
     text-wrap-mode: nowrap;
+}
+#chara .charaSerifItem span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: super;
+    line-height: 0px;
 }
 #chara .charaSerifItem + .charaSerifItem {
     margin-top: 40px;
@@ -830,6 +839,9 @@ aside nav ul li a {
     #chara .charaVoiceItem {
         min-width: 115px;
     }
+    #chara .charaVoiceItem img {
+        width: 20px;
+    }
     #chara .charaRight {
        width: 100%; 
        max-width: 240px;
@@ -978,6 +990,9 @@ aside nav ul li a {
 .header {
     animation: 1.0s ease 3.0s forwards logoAnime;
     opacity: 0;
+}
+.header a {
+    display: block;
 }
 @keyframes logoAnime {
 	0% {
