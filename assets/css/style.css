@@ -82,6 +82,15 @@ body,html {
         opacity: 1;
     }
 }
+@media screen and (max-width: 767px) { 
+    .bgmBtn {
+        width: 70px;
+        height: 70px;
+        outline-offset: -4px;
+        bottom: 15px;
+        left: 15px;
+    }
+}
 
 .sec {
     background: #FFF;
@@ -200,7 +209,7 @@ section {
         width: 55%;
     }
     .header.is_fixed {
-        top: 20px;
+        top: 30px;
         left: 30px;
         max-width: 150px;
     }
@@ -208,30 +217,95 @@ section {
 
 aside {
     color: #FFF;
-    position: fixed;
-    left: 0;
-    top: 50px;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     z-index: 1000;
     font-size: 16px;
-    display: none !important;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+aside .menuBtn {
+    border-radius: 100px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    outline: 1px solid #C69C6D;
+    outline-offset: -5px;
+    background: url(../images/icon_menu_close.svg) 0 0 / cover no-repeat;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    cursor: pointer;
+}
+aside .menuBtn.is_show {
+    display: block;
+}
+aside .menuBtn:hover {
+    opacity: 0.7;
+}
+aside .menuBtn img {
+    outline: 1px solid #C69C6D;
+    transition: all 0.3s;
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 100px;
+    outline-offset: -5px;
+}
+aside.is_open .menuBtn img {
+    opacity: 0;
 }
 aside nav {
     margin: 0px auto;
     width: fit-content;
+    height: 100dvh;
+    position: fixed;
+    right: -100% ;
+    top: 0;
+    transition: all 0.3s;
+    width: 150px;
+    background: #9f794f;
+    padding-top: 140px;
+}
+aside.is_open nav {
+    right: 0;;
 }
 aside nav ul {
-	display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+    display: block;
 }
 aside nav ul li a {
-	padding: 0.5em 1em;
+	padding: 1em;
 	display: block;
 	line-height: 1;
 	width: 150px;
 	text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) { 
+    aside .menuBtn:hover,
+    aside.is_open .menuBtn img {
+        opacity: 1;
+    }
+    aside.is_open .menuBtn img {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 767px) { 
+    aside .menuBtn {
+        right: 15px;
+        top: 15px;
+        outline-offset: -4px;
+    }
+    aside .menuBtn img {
+        width: 70px;
+        height: 70px;
+        outline-offset: -4px;
+    }
 }
 
 .kv {
