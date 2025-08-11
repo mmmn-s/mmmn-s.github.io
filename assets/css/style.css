@@ -718,7 +718,7 @@ aside nav ul li a {
     background: #b34c4c;
 }
 #chara .is_inori .charaPhoto {
-    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
+    background: url(../images/chara_inori_photo.webp) 0 0 / center no-repeat;
 }
 #chara .is_yua .charaSerifItem,
 #chara .is_yua .charaVoiceItem,
@@ -726,7 +726,7 @@ aside nav ul li a {
     background: #e585a2;
 }
 #chara .is_yua .charaPhoto {
-    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
+    background: url(../images/chara_inori_photo.webp) 0 0 / center no-repeat;
 }
 #chara .is_yukari .charaSerifItem,
 #chara .is_yukari .charaVoiceItem,
@@ -734,7 +734,7 @@ aside nav ul li a {
     background: #7d77af;
 }
 #chara .is_yukari .charaPhoto {
-    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
+    background: url(../images/chara_inori_photo.webp) 0 0 / center no-repeat;
 }
 #chara .line {
     position: absolute;
