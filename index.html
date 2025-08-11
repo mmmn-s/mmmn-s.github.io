@@ -55,7 +55,7 @@
     </header>
     <aside>
         <nav>
-            <p class=""></p>
+            <p class="menuBtn"><img src="assets/images/icon_menu.svg" alt="MENU"></p>
             <ul>
                 <li><a href="#">TOP</a></li>
                 <li><a href="#intro">Introduction</a></li>
@@ -245,13 +245,18 @@
         $(function() {
             var $mainVisual = $('.kv');
             var $header = $('header');
+            var $menuBtn = $('.menuBtn');
+            var $aside = $('aside');
             function checkScroll() {
                 var mvHeight = $mainVisual.outerHeight();
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > mvHeight) {
                     $header.addClass('is_fixed');
+                    $menuBtn.addClass('is_show');
                 } else {
                     $header.removeClass('is_fixed');
+                    $menuBtn.removeClass('is_show');
+                    $aside.removeClass('is_open');
                 }
             }
             $(window).on('scroll resize', checkScroll);
@@ -309,6 +314,12 @@
     let position = target.offset().top;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
+    });
+
+    $(function(){
+        $('.menuBtn').on('click', function(){
+            $('aside').toggleClass('is_open');
+        });
     });
 
     </script>
