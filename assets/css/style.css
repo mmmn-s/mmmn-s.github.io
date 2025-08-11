@@ -593,7 +593,7 @@ aside nav ul li a {
     width: calc(50% - 50px);
 }
 #chara .charaPhoto {
-    background: #000;
+    background: transparent;
     width: 100%;
     aspect-ratio: 4/5;
     border: 20px solid #FFF;
@@ -717,15 +717,24 @@ aside nav ul li a {
 #chara .is_inori .charaProfile li::before {
     background: #b34c4c;
 }
+#chara .is_inori .charaPhoto {
+    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
+}
 #chara .is_yua .charaSerifItem,
 #chara .is_yua .charaVoiceItem,
 #chara .is_yua .charaProfile li::before {
     background: #e585a2;
 }
+#chara .is_yua .charaPhoto {
+    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
+}
 #chara .is_yukari .charaSerifItem,
 #chara .is_yukari .charaVoiceItem,
 #chara .is_yukari .charaProfile li::before {
     background: #7d77af;
+}
+#chara .is_yukari .charaPhoto {
+    background: url(../images/chara_inori_photo.webp) 0 0 center / no-repeat;
 }
 #chara .line {
     position: absolute;
@@ -807,6 +816,9 @@ aside nav ul li a {
         max-width: 240px;
         width: 90%;
         margin-right: 10%;
+    }
+    #chara .charaPhoto {
+        border-width: 10px;
     }
     #chara .charaSerif {
         top: -30px;
