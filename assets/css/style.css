@@ -195,9 +195,9 @@ section {
 }
 @media screen and (max-width: 767px) { 
     .header {
-        top: 3%;
-        left: 7%;
-        width: 40%;
+        top: 5%;
+        left: 9%;
+        width: 55%;
     }
     .header.is_fixed {
         top: 20px;
