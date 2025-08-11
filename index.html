@@ -10,12 +10,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="format-detection" content="email=no,telephone=no,address=no">
-<meta name="description" content="同人サークル「mmmn`s」が制作するビジュアルノベルゲーム「Re：focus ～光の記憶をほどく時～」の公式サイトです。">
+<meta name="description" content="同人サークル「mmmn`s」が制作する百合×写真の恋愛ビジュアルノベルゲーム「Re：focus ～光の記憶をほどく時～」の公式サイトです。">
 
 <!-- OGP -->
 <meta property="og:title" content="Re：focus ～光の記憶をほどく時～ | mmmn`s">
 <meta property="og:type" content="website">
-<meta property="og:description" content="同人サークル「mmmn`s」が制作するビジュアルノベルゲーム「Re：focus ～光の記憶をほどく時～」の公式サイトです。">
+<meta property="og:description" content="同人サークル「mmmn`s」が制作する百合×写真の恋愛ビジュアルノベルゲーム「Re：focus ～光の記憶をほどく時～」の公式サイトです。">
 <meta property="og:site_name" content="Re：focus">
 <meta property="og:url" content="https://mmmn-s.github.io/assets/images/ogp.png">
 <meta property="og:image" content="https://mmmn-s.github.io/assets/images/ogp.png">
@@ -51,7 +51,7 @@
     </div>
 
     <header class="header">
-        <h1><img src="assets/images/logo.svg" alt="Re：focus" width="489" height="128"></h1>
+        <h1><a href="#"><img src="assets/images/logo.svg" alt="Re：focus（りふぉーかす）" width="489" height="128"></a></h1>
     </header>
     <aside>
         <nav>
@@ -319,6 +319,12 @@
     $(function(){
         $('.menuBtn').on('click', function(){
             $('aside').toggleClass('is_open');
+        });
+    });
+
+    $(function(){
+        $('aside nav ul li a').on('click', function(){
+            $('aside').removeClass('is_open');
         });
     });
 
