@@ -527,9 +527,9 @@ aside nav ul li a {
 }
 #chara .charaPhoto img {
     position: absolute;
-    width: calc(100% + 40px);
+    width: 100%;
     bottom: 0px;
-    left: -20px;
+    left: 0px;
     max-inline-size: unset;
 }
 #chara .charaSerif {
