@@ -353,8 +353,56 @@ aside nav ul li a {
     .sec .secTextBig strong {
         font-size: 24px;
     }
+    /* #intro .bgFrame.bgFrame01 {
+        top: 87%;
+        right: 10%;
+    }
+    #intro .bgFrame.bgFrame02 {
+        top: 78%;
+        left: -8%;
+    }
+    #intro .bgFrame.bgFrame03 {
+        right: -22%;
+        bottom: 48%;
+    }
+    #intro .bgFrame.bgFrame04 {
+        left: -21%;
+        top: 17%;
+    }
     #intro .bgFrame.bgFrame05 {
-        top: -4%;
+        width: 32%;
+        top: -10%;
+        left: 62%;
+    } */
+    /* #intro .bgFrame.bgFrame01,
+    #intro .bgFrame.bgFrame02,
+    #intro .bgFrame.bgFrame05 {
+        display: none;
+    } */
+    #intro .bgFrame.bgFrame01 {
+        top: 68%;
+        left: -22%;
+        display: none;
+    }
+    #intro .bgFrame.bgFrame02 {
+        top: 28%;
+        left: -45%;
+        width: 225px;
+    }
+    #intro .bgFrame.bgFrame03 {
+        right: calc(50% - 105px);
+        bottom: -12%;
+        width: 270px;
+    }
+    #intro .bgFrame.bgFrame04 {
+        width: 230px;
+        top: -7%;
+        left: calc(50% - 65px);
+    }
+    #intro .bgFrame.bgFrame05 {
+        width: 180px;
+        top: 47%;
+        left: calc(50% + 130px);
     }
 }
 
