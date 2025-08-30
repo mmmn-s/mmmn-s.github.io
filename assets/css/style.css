@@ -614,6 +614,9 @@ aside nav ul li a {
     border: 20px solid #FFF;
     transition: all 1s;
 }
+#chara .is_yua .charaPhoto {
+    aspect-ratio: 4.35/5;
+}
 #chara .charaPhoto img {
     position: absolute;
     width: 100%;
