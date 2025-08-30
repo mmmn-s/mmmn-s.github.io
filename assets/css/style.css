@@ -680,6 +680,11 @@ aside nav ul li a {
     width: 100%;
     margin-top: 20px;
 }
+#chara .charaVoice + strong {
+    margin-top: 30px;
+    display: block;
+    font-size: 24px;
+}
 #chara .charaVoiceItem {
     border-radius: 100px;
     background: #000;
@@ -879,6 +884,9 @@ aside nav ul li a {
     }
     #chara .line.right + img {
         right: 14px;
+    }
+    #chara .charaVoice + strong {
+        font-size: 18px;
     }
 }
 
