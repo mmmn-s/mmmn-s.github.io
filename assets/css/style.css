@@ -910,19 +910,19 @@ aside nav ul li a {
     position: relative;
 }
 #movie .movieItem:before {
-    width: 110%;
+    /* width: 110%;
     height: 110%;
     background: url(../images/kv.webp) center / cover no-repeat;
     filter: blur(6px);
     top: -5%;
     left: -5%;
     content: "";
-    position: absolute;
+    position: absolute; */
 }
 #movie .movieItem:after {
-    content: "coming soon";
+    /* content: "coming soon";
     position: absolute;
-    display: block;
+    display: block; */
 }
 
 #info {
